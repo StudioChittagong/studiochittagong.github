@@ -1,0 +1,287 @@
+/*==================================================
+
+ +-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+-+-+
+ |A|u|t|h|o|r|:| |@|s|a|y|e|m|o|n|1|0|
+ +-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+-+-+
+
+Author URL: https://sayemon10.github.io
+
+Version: 1.0
+
+[Table of Contents]
+--------------------------------------------------
+- Typography
+- body
+- Common 
+- Navigation
+- Homepage
+    - Intro
+    - About
+    - Contact
+- Media Queries 
+    - 991px
+    - 767px
+    - 480px
+
+==================================================*/
+
+/*==================================================
+    Section:    Font-face setup
+==================================================*/
+
+@font-face {
+    font-family: "SF UI_light";
+    src: url("../fonts/SF-UI-Display-Light.ttf") format("Truetype");
+}
+
+@font-face {
+    font-family: "SF UI_italic";
+    src: url("../fonts/SF-UI-Text-LightItalic.ttf") format("Truetype");
+}
+
+/*==================================================
+    Section:    Root 
+==================================================*/
+
+:root {
+    --fontLight: "SF UI_light";
+    --fontItalic: "SF UI_italic";
+    --white: rgba(230, 230, 230, 1);
+    --red: rgba(129, 3, 3, 1);
+    --black: black;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: var(--fontLight);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--white);
+}
+
+/*==================================================
+    Section:    Projects & Intro 
+==================================================*/
+
+#Logo {
+    height: 3rem;
+}
+
+.NavbarBg {
+    background-color: var(--white);
+}
+
+nav.navbar div#navbarSupportedContent ul.navbar-nav li.nav-item a.nav-link {
+    color: var(--black);
+    font-family: var(--fontLight);
+}
+
+#bottom {
+    background: var(--white);
+    font-family: var(--fontItalic);
+}
+
+#bottom div.container div.d-inline-flex {
+    font-family: var(--fontLight);
+}
+
+#navbarSupportedContent ul div.d-inline-flex a, #bottom div.container div.d-inline-flex div.ml-3 a {
+    color: var(--black);
+    font-size: 1.1rem;
+}
+
+.content {
+    height: 40vh;
+}
+
+.project {
+    height: 100%;
+    width: 100%;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+div.container-fluid div.row div.col-lg-4 a:hover .project {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+}
+
+div.container-fluid div.row div.col-lg-4 a div.position-absolute {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 65%;
+    background: rgba(0, 0, 0, 0.6);
+    color: var(--white);
+    padding: 3% 0 0;
+    display: none;
+}
+
+div.container-fluid div.row div.col-lg-4 a:hover div.position-absolute {
+    display: block;
+}
+
+#Projects a.col {
+    font-family: var(--fontLight);
+    font-size: 2rem;
+    color: var(--black);
+    height: 20vh;
+}
+
+#Projects a.col:hover {
+    color: var(--white);
+    background-color: var(--black);
+}
+
+/*==================================================
+    Section:    About 
+==================================================*/
+
+#About img.about {
+    width: 100%;
+    height: 100vh;
+}
+
+#About div.container-fluid div.position-absolute {
+    top: 50%;
+    right: 0;
+    left: 0;
+    color: var(--white);
+}
+
+/*==================================================
+    Section:    Contact 
+==================================================*/
+
+#Contact {
+    height: 100vh;
+}
+
+.number {
+    font-size: 3rem;
+}
+
+#Contact div.container div.row div.media i {
+    font-size: 3rem;
+}
+
+#Contact div.container div.row a {
+    background: var(--black);
+    color: var(--white);
+}
+
+#Contact div.container div.row a:hover {
+    background: var(--white);
+    border: 1px solid var(--black);
+    cursor: pointer;
+    color: var(--black);
+}
+
+.ion-paperclip {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+#map {
+    overflow: hidden;
+}
+
+#map iframe {
+    height: 43vh;
+    width: 100vw;
+}
+
+/*==================================================
+    @media-queries for cross-devices changes
+==================================================*/
+
+@media only screen and (max-width: 575.98px) {
+    #Logo {
+        height: 1.75rem;
+    }
+    .content {
+        height: 50vh;
+    }
+    .project {
+        filter: grayscale(0);
+        -webkit-filter: grayscale(0);
+    }
+    #bottom {
+        font-size: 0.85rem;
+    }
+    .number {
+        font-size: 2.85rem;
+    }
+    div.container-fluid div.row div.col-lg-4 a div.position-absolute {
+        display: block;
+    }
+    #About div.container-fluid div.position-absolute {
+        top: 25%;
+    }
+    #About div.container-fluid div.position-absolute h1 {
+        font-size: 2.25rem;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+    #Logo {
+        height: 2rem;
+    }
+    .content {
+        height: 50vh;
+    }
+    .project {
+        filter: grayscale(0);
+        -webkit-filter: grayscale(0);
+    }
+    #bottom {
+        font-size: 0.85rem;
+    }
+    div.container-fluid div.row div.col-lg-4 a div.position-absolute {
+        display: block;
+    }
+    #About div.container-fluid div.position-absolute {
+        top: 40%;
+    }
+    .number {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+    #Logo {
+        height: 2rem;
+    }
+    .content {
+        height: 50vh;
+    }
+    .project {
+        filter: grayscale(0);
+        -webkit-filter: grayscale(0);
+    }
+    div.container-fluid div.row div.col-lg-4 a div.position-absolute {
+        display: block;
+    }
+    #Projects div.container-fluid div.row div.col-lg-4:last-child {
+        margin: 0 auto;
+    }
+    .number {
+        font-size: 2rem;
+    }
+    #bottom {
+        font-size: 0.85rem;
+    }
+    #About div.container-fluid div.position-absolute {
+        top: 40%;
+    }
+    #bottom div.container div.d-inline-flex div.ml-3 a {
+        font-size: 0.9rem;
+    }
+}
