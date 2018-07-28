@@ -169,12 +169,12 @@ div.container-fluid div.row div.col-lg-4 a:hover div.position-absolute {
     font-size: 3rem;
 }
 
-#Contact div.container div.row a {
+#Contact div.container div.row a#mail {
     background: var(--black);
     color: var(--white);
 }
 
-#Contact div.container div.row a:hover {
+#Contact div.container div.row a#mail:hover {
     background: var(--white);
     border: 1px solid var(--black);
     cursor: pointer;

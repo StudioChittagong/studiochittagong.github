@@ -1,2 +1,4 @@
 # studiochittagong.github.io
-Studio chittagong is a human infrastructure of skilled craftsmen and architects who design and build the work directly.
+Studio Chittagong is a human infrastructure of skilled craftsmen and architects who design and build the work directly.
+
+### Designed & Coded with 💖 by [@sayemon10](https://sayemon10.github.io).
