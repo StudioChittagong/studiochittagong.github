@@ -63,6 +63,10 @@ body {
     background-color: var(--white);
 }
 
+.modal-body {
+    padding: 0.1rem;
+}
+
 /*==================================================
     Section:    Projects & Intro 
 ==================================================*/
@@ -114,7 +118,7 @@ div.container-fluid div.row div.col-lg-4 a div.position-absolute {
     left: 0;
     right: 0;
     bottom: 0;
-    top: 65%;
+    top: 50%;
     background: rgba(0, 0, 0, 0.6);
     color: var(--white);
     padding: 3% 0 0;
