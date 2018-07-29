@@ -170,7 +170,7 @@ div.container-fluid div.row div.col-lg-4 a:hover div.position-absolute {
 }
 
 #Contact div.container div.row div.media i {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 #Contact div.container div.row a#mail {
@@ -185,7 +185,7 @@ div.container-fluid div.row div.col-lg-4 a:hover div.position-absolute {
     color: var(--black);
 }
 
-.ion-paperclip {
+.ion-paperclip, .ion-ios-telephone-outline {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
