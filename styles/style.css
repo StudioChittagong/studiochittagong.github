@@ -233,6 +233,9 @@ div.container-fluid div.row div.col-lg-4 a:hover div.position-absolute {
     div.container-fluid div.row div.col-lg-4 a div.position-absolute {
         display: block;
     }
+    #About div.container-fluid {
+        background-position: center bottom;
+    }
     #About div.container-fluid div.position-absolute {
         top: 20%;
     }
