@@ -23,3 +23,14 @@ $(".navbar-toggler").click(function () {
         }
     }
 });
+
+//Preloader
+var preloader = $('.preloader');
+$(window).on('load', function() {
+    var preloaderFadeOutTime = 500;
+
+    function hidePreloader() {
+        preloader.fadeOut(preloaderFadeOutTime);
+    }
+    hidePreloader();
+});
