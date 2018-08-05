@@ -145,16 +145,23 @@ div.container-fluid div.row div.col-lg-4 a:hover div.position-absolute {
     Section:    About 
 ==================================================*/
 
-#About img.about {
-    width: 100%;
+#About div.container-fluid {
+    background-image: url("../images/515965490-612x612.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 100vh;
+    background-position: right bottom;
 }
 
 #About div.container-fluid div.position-absolute {
-    top: 50%;
+    top: 35%;
     right: 0;
     left: 0;
-    color: var(--white);
+    color: var(--black);
+}
+
+#About div.container-fluid div.position-absolute h1 img {
+    height: 3rem;
 }
 
 /*==================================================
@@ -227,10 +234,13 @@ div.container-fluid div.row div.col-lg-4 a:hover div.position-absolute {
         display: block;
     }
     #About div.container-fluid div.position-absolute {
-        top: 25%;
+        top: 20%;
     }
     #About div.container-fluid div.position-absolute h1 {
-        font-size: 2.25rem;
+        font-size: 2rem;
+    }
+    #About div.container-fluid div.position-absolute h1 img {
+        height: 1.85rem;
     }
 }
 
@@ -252,7 +262,10 @@ div.container-fluid div.row div.col-lg-4 a:hover div.position-absolute {
         display: block;
     }
     #About div.container-fluid div.position-absolute {
-        top: 40%;
+        top: 20%;
+    }
+    #About div.container-fluid div.position-absolute h1 {
+        font-size: 2rem;
     }
     .number {
         font-size: 2rem;
@@ -283,7 +296,7 @@ div.container-fluid div.row div.col-lg-4 a:hover div.position-absolute {
         font-size: 0.85rem;
     }
     #About div.container-fluid div.position-absolute {
-        top: 40%;
+        top: 20%;
     }
     #bottom div.container div.d-inline-flex div.ml-3 a {
         font-size: 0.9rem;
