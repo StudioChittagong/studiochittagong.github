@@ -52,8 +52,8 @@
 <body>
 
     <nav class="navbar navbar-expand-md sticky-top px-sm-5">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="ion-android-menu"></span>
         </button>
 
@@ -66,17 +66,28 @@
                 <text transform="matrix(1 0 0 1 91.0596 48.3218)" font-family="'AGaramondPro-Bold'" font-size="58.3333">d</text>
                 <text transform="matrix(1 0 0 1 122.6753 48.3218)" font-family="'AGaramondPro-Bold'" font-size="58.3333">i</text>
                 <text transform="matrix(1 0 0 1 139.6499 48.3218)" font-family="'AGaramondPro-Bold'" font-size="58.3333">o</text>
-                <text transform="matrix(1 0 0 1 170.041 48.3218)" font-family="'AGaramondPro-Bold'" font-size="58.3333"> </text>
-                <text transform="matrix(1 0 0 1 184.3325 48.3218)" fill="#810303" font-family="'AGaramondPro-Bold'" font-size="58.3333">C</text>
-                <text transform="matrix(1 0 0 1 224.8154 48.3218)" fill="#810303" font-family="'AGaramondPro-Bold'" font-size="58.3333">H</text>
-                <text transform="matrix(1 0 0 1 272.1235 48.3218)" fill="#810303" font-family="'AGaramondPro-Bold'" font-size="58.3333">I</text>
-                <text transform="matrix(1 0 0 1 294.0562 48.3218)" fill="#810303" font-family="'AGaramondPro-Bold'" font-size="58.3333">T</text>
-                <text transform="matrix(1 0 0 1 332.6714 48.3218)" fill="#810303" font-family="'AGaramondPro-Bold'" font-size="58.3333">T</text>
-                <text transform="matrix(1 0 0 1 366.0962 48.3218)" fill="#810303" font-family="'AGaramondPro-Bold'" font-size="58.3333">A</text>
-                <text transform="matrix(1 0 0 1 401.3882 48.3218)" fill="#810303" font-family="'AGaramondPro-Bold'" font-size="58.3333">G</text>
-                <text transform="matrix(1 0 0 1 444.4966 48.3218)" fill="#810303" font-family="'AGaramondPro-Bold'" font-size="58.3333">O</text>
-                <text transform="matrix(1 0 0 1 490.7544 48.3218)" fill="#810303" font-family="'AGaramondPro-Bold'" font-size="58.3333">N</text>
-                <text transform="matrix(1 0 0 1 534.6782 48.3218)" fill="#810303" font-family="'AGaramondPro-Bold'" font-size="58.3333">G</text>
+                <text transform="matrix(1 0 0 1 170.041 48.3218)" font-family="'AGaramondPro-Bold'" font-size="58.3333">
+                </text>
+                <text transform="matrix(1 0 0 1 184.3325 48.3218)" fill="#810303" font-family="'AGaramondPro-Bold'"
+                    font-size="58.3333">C</text>
+                <text transform="matrix(1 0 0 1 224.8154 48.3218)" fill="#810303" font-family="'AGaramondPro-Bold'"
+                    font-size="58.3333">H</text>
+                <text transform="matrix(1 0 0 1 272.1235 48.3218)" fill="#810303" font-family="'AGaramondPro-Bold'"
+                    font-size="58.3333">I</text>
+                <text transform="matrix(1 0 0 1 294.0562 48.3218)" fill="#810303" font-family="'AGaramondPro-Bold'"
+                    font-size="58.3333">T</text>
+                <text transform="matrix(1 0 0 1 332.6714 48.3218)" fill="#810303" font-family="'AGaramondPro-Bold'"
+                    font-size="58.3333">T</text>
+                <text transform="matrix(1 0 0 1 366.0962 48.3218)" fill="#810303" font-family="'AGaramondPro-Bold'"
+                    font-size="58.3333">A</text>
+                <text transform="matrix(1 0 0 1 401.3882 48.3218)" fill="#810303" font-family="'AGaramondPro-Bold'"
+                    font-size="58.3333">G</text>
+                <text transform="matrix(1 0 0 1 444.4966 48.3218)" fill="#810303" font-family="'AGaramondPro-Bold'"
+                    font-size="58.3333">O</text>
+                <text transform="matrix(1 0 0 1 490.7544 48.3218)" fill="#810303" font-family="'AGaramondPro-Bold'"
+                    font-size="58.3333">N</text>
+                <text transform="matrix(1 0 0 1 534.6782 48.3218)" fill="#810303" font-family="'AGaramondPro-Bold'"
+                    font-size="58.3333">G</text>
                 <path fill-rule="evenodd" fill="#810303" d="M251.975,67.602v-6.035h350.668v6.035H251.975z" />
             </svg>
         </a>
@@ -112,8 +123,16 @@
 
     <section id="Projects">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 content">
+            <ul class="list-inline text-center">
+                <li class="list-inline-item" data-rel="all">All</li>
+                <li class="list-inline-item" data-rel="res">Residential</li>
+                <li class="list-inline-item" data-rel="com">Commercial</li>
+                <li class="list-inline-item" data-rel="ind">Industrial</li>
+                <li class="list-inline-item" data-rel="ret">Restaurant</li>
+                <li class="list-inline-item" data-rel="api">Apartment Interior</li>
+            </ul>
+            <div class="row" id="portfolio">
+                <div class="col-lg-4 col-md-6 col-sm-12 p-0 content tile scale-anm all">
                     <a href="projects_001.html" target="_blank">
                         <img src="../images/project_001/night 1.jpg" alt="project001" class="project">
                         <div class="position-absolute text-center">
@@ -122,7 +141,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 content">
+                <div class="col-lg-4 col-md-6 col-sm-12 p-0 content tile scale-anm all com">
                     <a href="projects_002.html" target="_blank">
                         <img src="../images/project_002/applebox.jpg" alt="project002" class="project">
                         <div class="position-absolute text-center">
@@ -131,7 +150,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 content">
+                <div class="col-lg-4 col-md-6 col-sm-12 p-0 content tile scale-anm all com">
                     <a href="projects_003.html" target="_blank">
                         <img src="../images/project_003/cover.jpg" alt="project003" class="project">
                         <div class="position-absolute text-center">
@@ -140,16 +159,17 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 content">
+                <div class="col-lg-4 col-md-6 col-sm-12 p-0 content tile scale-anm all">
                     <a href="projects_004.html" target="_blank">
-                        <img src="../images/project_004/13549034_1144314505610239_2014137982_o.jpg" alt="project004" class="project">
+                        <img src="../images/project_004/13549034_1144314505610239_2014137982_o.jpg" alt="project004"
+                            class="project">
                         <div class="position-absolute text-center">
                             <h4>Project Name: 11 SP Regiment</h4>
                             <p>Project Location: Bogura Cantonment, Bangladesh</p>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 content">
+                <div class="col-lg-4 col-md-6 col-sm-12 p-0 content tile scale-anm all api">
                     <a href="projects_005.html" target="_blank">
                         <img src="../images/project_005/Layer 2.jpg" alt="project005" class="project">
                         <div class="position-absolute text-center">
@@ -158,7 +178,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 content">
+                <div class="col-lg-4 col-md-6 col-sm-12 p-0 content tile scale-anm all">
                     <a href="projects_006.html" target="_blank">
                         <img src="../images/project_006/1.jpg" alt="project006" class="project">
                         <div class="position-absolute text-center">
@@ -167,7 +187,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 content">
+                <div class="col-lg-4 col-md-6 col-sm-12 p-0 content tile scale-anm all res">
                     <a href="projects_007.html" target="_blank">
                         <img src="../images/project_007/f3.jpg" alt="project007" class="project">
                         <div class="position-absolute text-center">
@@ -176,7 +196,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 content">
+                <div class="col-lg-4 col-md-6 col-sm-12 p-0 content tile scale-anm all ind">
                     <a href="projects_008.html" target="_blank">
                         <img src="../images/project_008/reception_Scene 5.jpg" alt="project008" class="project">
                         <div class="position-absolute text-center">
@@ -185,11 +205,11 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 content">
+                <div class="col-lg-4 col-md-6 col-sm-12 p-0 content tile scale-anm all">
                     <a href="projects_009.html" target="_blank">
-                        <img src="../images/applebox.jpg" alt="project009" class="project">
+                        <img src="../images/project_009/IMG20180728191353.jpg" alt="project009" class="project">
                         <div class="position-absolute text-center">
-                            <h4>Project Name: Apple Box</h4>
+                            <h4>Project Name: Studio Chittagong Office</h4>
                             <p>Project Location: Chittagong, Bangladesh</p>
                         </div>
                     </a>

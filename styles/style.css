@@ -98,6 +98,42 @@ nav.navbar div#navbarSupportedContent ul.navbar-nav li.nav-item a.nav-link {
     font-size: 1.1rem;
 }
 
+ul.list-inline li.list-inline-item {
+    padding: 0 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+ul.list-inline li.list-inline-item::after {
+    content: "";
+    background: none;
+    height: 16px;
+    width: 1px;
+    border-right: 2px solid var(--black);
+    position: absolute;
+    right: -1px;
+    top: 5px;
+}
+
+ul.list-inline li.list-inline-item:last-child::after {
+    display: none;
+}
+
+ul.list-inline li.list-inline-item:hover {
+    color: var(--red);
+}
+
+.tile {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease;
+}
+
+.scale-anm {
+    transform: scale(1);
+}
+
 .content {
     height: 40vh;
 }
@@ -107,6 +143,7 @@ nav.navbar div#navbarSupportedContent ul.navbar-nav li.nav-item a.nav-link {
     width: 100%;
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
+    object-fit: cover;
 }
 
 div.container-fluid div.row div.col-lg-4 a:hover .project {
