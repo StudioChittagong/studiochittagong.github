@@ -144,6 +144,7 @@ ul.list-inline li.list-inline-item:hover {
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
     object-fit: cover;
+    padding: 1%;
 }
 
 div.container-fluid div.row div.col-lg-4 a:hover .project {
@@ -152,9 +153,9 @@ div.container-fluid div.row div.col-lg-4 a:hover .project {
 }
 
 div.container-fluid div.row div.col-lg-4 a div.position-absolute {
-    left: 0;
-    right: 0;
-    bottom: 0;
+    left: 1%;
+    right: 1%;
+    bottom: 1%;
     top: 50%;
     background: rgba(0, 0, 0, 0.6);
     color: var(--white);
@@ -176,6 +177,18 @@ div.container-fluid div.row div.col-lg-4 a:hover div.position-absolute {
 #Projects a.col:hover {
     color: var(--white);
     background-color: var(--black);
+}
+
+#gallery {
+    overflow: hidden;
+}
+
+.gallery-img {
+    height: 40vh;
+    width: 100%;
+    padding: 1%;
+    object-fit: cover;
+    object-position: center;
 }
 
 /*==================================================
@@ -340,6 +353,12 @@ div.container-fluid div.row div.col-lg-4 a:hover div.position-absolute {
     }
     #bottom div.container div.d-inline-flex div.ml-3 a {
         font-size: 0.9rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    h3>img {
+        width: 35rem;
     }
 }
 
