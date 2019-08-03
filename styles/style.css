@@ -230,6 +230,19 @@ div.container-fluid div.row div.col-lg-4 a:hover div.position-absolute {
     font-size: smaller;
 }
 
+#About .position-relative::before {
+    content: "Active Professionals";
+    font: 900 8rem/0 var(--fontLight);
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: -666;
+    color: lightgray;
+    bottom: 0;
+    top: 35%;
+}
+
 /*==================================================
     Section:    Contact 
 ==================================================*/
@@ -311,6 +324,10 @@ div.container-fluid div.row div.col-lg-4 a:hover div.position-absolute {
     #About div.container-fluid div.position-absolute h1 img {
         height: 1.85rem;
     }
+    #About .position-relative::before {
+        font-size: 1rem;
+        top: 1rem;
+    }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767.98px) {
@@ -332,6 +349,10 @@ div.container-fluid div.row div.col-lg-4 a:hover div.position-absolute {
     }
     .number {
         font-size: 2rem;
+    }
+    #About .position-relative::before {
+        font-size: 3rem;
+        top: 10%;
     }
 }
 
@@ -360,6 +381,17 @@ div.container-fluid div.row div.col-lg-4 a:hover div.position-absolute {
     }
     #bottom div.container div.d-inline-flex div.ml-3 a {
         font-size: 0.9rem;
+    }
+    #About .position-relative::before {
+        font-size: 5rem;
+        top: 10%;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 991.98px) {
+    #About .position-relative::before {
+        font-size: 5rem;
+        top: 10%;
     }
 }
 
