@@ -214,6 +214,22 @@ div.container-fluid div.row div.col-lg-4 a:hover div.position-absolute {
     height: 3rem;
 }
 
+#About ul.list-inline li.list-inline-item::after {
+    display: none;
+}
+
+#About ul.list-inline li.list-inline-item i {
+    font-size: 2rem;
+}
+
+#About ul.list-inline li.list-inline-item .media {
+    color: rgba(50, 50, 50, 1)
+}
+
+.media-body>p {
+    font-size: smaller;
+}
+
 /*==================================================
     Section:    Contact 
 ==================================================*/
@@ -255,7 +271,7 @@ div.container-fluid div.row div.col-lg-4 a:hover div.position-absolute {
 }
 
 #map iframe {
-    height: 43vh;
+    height: 55vh;
     width: 100vw;
 }
 
@@ -314,12 +330,6 @@ div.container-fluid div.row div.col-lg-4 a:hover div.position-absolute {
     div.container-fluid div.row div.col-lg-4 a div.position-absolute {
         display: block;
     }
-    #About div.container-fluid div.position-absolute {
-        top: 20%;
-    }
-    #About div.container-fluid div.position-absolute h1 {
-        font-size: 2rem;
-    }
     .number {
         font-size: 2rem;
     }
@@ -348,17 +358,8 @@ div.container-fluid div.row div.col-lg-4 a:hover div.position-absolute {
     #bottom {
         font-size: 0.85rem;
     }
-    #About div.container-fluid div.position-absolute {
-        top: 20%;
-    }
     #bottom div.container div.d-inline-flex div.ml-3 a {
         font-size: 0.9rem;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    h3>img {
-        width: 35rem;
     }
 }
 
