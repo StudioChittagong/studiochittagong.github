@@ -288,6 +288,13 @@ div.container-fluid div.row div.col-lg-4 a:hover div.position-absolute {
     width: 100vw;
 }
 
+.profile {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    object-position: center;
+}
+
 /*==================================================
     @media-queries for cross-devices changes
 ==================================================*/
