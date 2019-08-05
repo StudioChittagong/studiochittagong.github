@@ -214,7 +214,7 @@ div.container-fluid div.row div.col-lg-4 a:hover div.position-absolute {
     height: 3rem;
 }
 
-#About ul.list-inline li.list-inline-item::after {
+#About ul.list-inline li.list-inline-item::after, #Contact ul.list-inline li.list-inline-item::after {
     display: none;
 }
 
